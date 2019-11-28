@@ -13,8 +13,8 @@
       <div class="bottom">
         <div id="title">
           <img src="style/images/hands.png" id="logo" alt="">
+          <h1><span class="b" style="color:black;">b</span><span class="r" style="color:black;">r</span><span class="a" style="color:black;">a</span><span class="c" style="color:black;">c</span><span class="o" style="color:black;">o</span><span class="n" style="color:black;">n</span><span class="n" style="color:black;">n</span><span class="i" style="color:black;">i</span><span class="e" style="color:black;">e</span><span class="r" style="color:black;">r</span></h1>
           <h1><span class="b" style="color:black;">b</span><span class="e" style="color:black;">e</span><span class="a" style="color:black;">a</span><span class="u" style="color:black;">u</span><span class="f" style="color:black;">f</span><span class="a" style="color:black;">a</span><span class="y" style="color:black;">y</span><span class="s" style="color:black;">s</span></h1>
-          <h1></h1>
         </div>
         <div class="arrow-down"></div>
       </div>
@@ -24,14 +24,15 @@
     <!-- The scripts -->
 
     <script>
-
+      const colors = ['#00b2e6', '#FFB1B8']
+      const color = colors[Math.floor(Math.random()*2)]
       const changeColor = () => {
         const title = document.getElementById("title");
         const letters = title.innerText.split("");
-        const letter = letters[Math.floor(Math.random()*8)];
+        const letter = letters[Math.floor(Math.random()*19)];
         const selector = document.getElementsByClassName(letter);
         Array.from(selector).forEach((element) => {
-          element.style.color = element.style.color === 'black' ? '#FFB1B8' : 'black';
+          element.style.color = element.style.color === 'black' ? color : 'black';
         });
         console.log(selector);
         console.log(letter);
