@@ -1,0 +1,63 @@
+/*First screen*/
+
+#logo {
+  height: 200;
+  width: 200;
+}
+
+h1 {
+  font-family: 'Plaax 1 Sathonay';
+  font-size: 400;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 0.7;
+  text-transform: uppercase;
+  transition-duration: 3s;
+  /*color: #00b2e6; blue color from PDF*/
+  /*pink color from PDF*/
+}
+
+.first {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  font-family: 'Maax Mono';
+  text-align: right;
+  font-size: 30;
+}
+
+#title {
+  border: 1px black solid;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: 1px black solid;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid grey;
+}
+
+#braconnier, #beaufays {
+  transition-duration: 3s;
+}
+
+
+span {
+  transition-duration: 4s;
+}

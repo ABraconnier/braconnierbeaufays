@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Braconnier Beaufays</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+
+  <body>
+    <div class="first">
+      <nav>
+        services / clients / about / contact
+      </nav>
+      <div class="bottom">
+        <div id="title">
+          <img src="style/images/hands.png" id="logo" alt="">
+          <h1><span class="b" style="color:black;">b</span><span class="e" style="color:black;">e</span><span class="a" style="color:black;">a</span><span class="u" style="color:black;">u</span><span class="f" style="color:black;">f</span><span class="a" style="color:black;">a</span><span class="y" style="color:black;">y</span><span class="s" style="color:black;">s</span></h1>
+          <h1></h1>
+        </div>
+        <div class="arrow-down"></div>
+      </div>
+    </div>
+
+
+    <!-- The scripts -->
+
+    <script>
+
+      const changeColor = () => {
+        const title = document.getElementById("title");
+        const letters = title.innerText.split("");
+        const letter = letters[Math.floor(Math.random()*8)];
+        const selector = document.getElementsByClassName(letter);
+        Array.from(selector).forEach((element) => {
+          element.style.color = element.style.color === 'black' ? '#FFB1B8' : 'black';
+        });
+        console.log(selector);
+        console.log(letter);
+      };
+      //   if (title.style.color === "black") {
+      //     title.style.color = "#FFB1B8";
+      //   } else {
+      //   title.style.color = "black";
+      //     };
+      //   };
+
+      setInterval( () => { changeColor(); }, 4000);
+      // setInterval( () => { changeColor(beaufays); }, 4000);
+    </script>
+  </body>
+</html>
