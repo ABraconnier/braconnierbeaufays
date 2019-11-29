@@ -1,9 +1,12 @@
 /*First screen*/
 
 #logo {
-  height: 200;
   width: 200;
+  display: inline;
 }
+
+  /*#00b2e6; blue color from PDF*/
+  /*#FFB1B8; pink color from PDF*/
 
 h1 {
   font-family: 'Plaax 1 Sathonay';
@@ -14,15 +17,13 @@ h1 {
   line-height: 0.7;
   text-transform: uppercase;
   transition-duration: 3s;
-  /*color: #00b2e6; blue color from PDF*/
-  /*pink color from PDF*/
+
 }
 
 .first {
   height: 100%;
   width: 100%;
   background-color: white;
-  border: 1px black solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,30 +35,37 @@ nav {
   font-size: 30;
 }
 
-#title {
-  border: 1px black solid;
+nav a {
+  text-decoration: none;
+  color: black;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
 
 .bottom {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border: 1px black solid;
 }
 
 .arrow-down {
   width: 0;
   height: 0;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-  border-top: 60px solid grey;
-}
-
-#braconnier, #beaufays {
-  transition-duration: 3s;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid black;
 }
 
 
 span {
-  transition-duration: 4s;
+  transition-duration: 3s;
+}
+
+#beaufays {
+  display: flex;
+  align-items: stretch;
 }
