@@ -21,11 +21,11 @@ h1 {
 }
 
 .first {
-  height: 100%;
+  height: 90%;
   width: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -33,6 +33,9 @@ nav {
   font-family: 'Maax Mono';
   text-align: right;
   font-size: 30;
+  position: sticky;
+  top: 0;
+  height: 10%;
 }
 
 nav a {
@@ -65,3 +68,7 @@ span {
   transition-duration: 3s;
 }
 
+.second {
+  height: 100%;
+  border: 1px solid black;
+}
