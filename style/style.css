@@ -68,7 +68,30 @@ span {
   transition-duration: 3s;
 }
 
-.second {
+.wrapper {
   height: 100%;
   border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-left {
+  border: 1px solid black;
+}
+
+.col-right {
+  border: 1px solid black;
+  padding: 25% 0;
+}
+
+ul {
+  list-style: none;
+  vertical-align: middle;
+  width: 400px;
+  height: 400px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 0.5em;
+  background-color: #FFB1B8;
 }
