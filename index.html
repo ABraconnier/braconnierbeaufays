@@ -7,17 +7,15 @@
   </head>
 
   <body>
-    <nav>
-        <a href="">services</a> / <a href="">clients</a> / <a href="">about</a> / <a href="">contact</a>
-    </nav>
     <div class="first">
+      <nav>
+        <a href="">services</a> / <a href="">clients</a> / <a href="">about</a> / <a href="">contact</a>
+      </nav>
       <div id="title">
-        <h1 id="beaufays"><span class="b" style="color:black;">b</span><span class="e" style="color:black;">e</span><span class="a" style="color:black;">a</span><span class="u" style="color:black;">u</span><span class="f" style="color:black;">f</span><span class="a" style="color:black;">a</span><span class="y" style="color:black;">y</span><span class="s" style="color:black;">s</span></h1>
-        <h1 id="braconnier"><span class="b" style="color:black;">b</span><span class="r" style="color:black;">r</span><span class="a" style="color:black;">a</span><span class="c" style="color:black;">c</span><span class="o" style="color:black;">o</span><span class="n" style="color:black;">n</span><span class="n" style="color:black;">n</span><span class="i" style="color:black;">i</span><span class="e" style="color:black;">e</span><span class="r" style="color:black;">r</span></h1>
+        <h1 id="beaufays braconnier"><span class="b" style="color:black;">b</span><span class="r" style="color:black;">r</span><span class="a" style="color:black;">a</span><span class="c" style="color:black;">c</span><span class="o" style="color:black;">o</span><span class="n" style="color:black;">n</span><span class="n" style="color:black;">n</span><span class="i" style="color:black;">i</span><span class="e" style="color:black;">e</span><span class="r" style="color:black;">r</span><span class="b" style="color:black;">b</span><span class="e" style="color:black;">e</span><span class="a" style="color:black;">a</span><span class="u" style="color:black;">u</span><span class="f" style="color:black;">f</span><span class="a" style="color:black;">a</span><span class="y" style="color:black;">y</span><span class="s" style="color:black;">s</span></h1>
       </div>
-      <div class="arrow-down"></div>
     </div>
-
+    <div class="first-down"><div class="arrow-down"></div></div>
     <div class="wrapper">
       <div class="col-left">
         <h2>consectetur</h2>
@@ -46,6 +44,11 @@
       </div>
     </div>
 
+    <div class="parallax-effect"></div>
+    <div style="height:1000px;background-image: linear-gradient(to right top, #faa7e4, #f395e5, #e983e9, #dc72ee, #cb63f4); font-size:36px; text-align: center; font-family: 'Raleway', Arial, sans-serif">
+      Parallax Effect
+    </div>
+
     <script>
       // color changing in the title
       const colors = ['#00b2e6', '#FFB1B8']
@@ -59,7 +62,7 @@
           element.style.color = element.style.color === 'black' ? color : 'black';
         });
       };
-      setInterval( () => { changeColor(); }, 1000);
+      setInterval( () => { changeColor(); }, 3000);
     </script>
   </body>
 </html>
