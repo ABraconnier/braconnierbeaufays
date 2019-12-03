@@ -38,7 +38,7 @@ nav {
   height: 10%;
 }
 
-nav a {
+a {
   text-decoration: none;
   color: black;
 }
@@ -70,28 +70,46 @@ span {
 
 .wrapper {
   height: 100%;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.col-left {
-  border: 1px solid black;
+
+.col-right, .col-left {
+  padding: 220px 0;
+  text-align: center;
 }
 
-.col-right {
-  border: 1px solid black;
-  padding: 25% 0;
+h2 {
+  font-family: 'Plaax 1 Sathonay';
+  font-size: 100;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 ul {
   list-style: none;
-  vertical-align: middle;
-  width: 400px;
-  height: 400px;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  font-size: 30px;
+  font-family: 'Plaax 1 Sathonay';
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 60px;
   letter-spacing: 0.5em;
-  background-color: #FFB1B8;
+  margin: 0;
+  padding: 0;
 }
+
+ul a:hover {
+  font-style: italic;
+  background-color: #FFB1B8;
+  opacity: 0.7;
+}
+
+p {
+  font-family: 'Gupter';
+  opacity: 0.7;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
