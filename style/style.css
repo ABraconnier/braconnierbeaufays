@@ -73,10 +73,9 @@ nav a:hover {
 }
 
 h2 {
-  font-family: 'Plaax 1 Sathonay';
-  font-size: 140;
-  font-weight: normal;
-  text-transform: uppercase;
+  font-family: 'Plaax 6 Trial';
+  font-size: 90;
+  font-weight: bold;
   margin: 0;
   line-height: 0.9;
 }
@@ -86,14 +85,18 @@ ul {
   padding-right: 40%;
   margin: 0;
   list-style-type: none;
-  font-size: 40;
+  font-size: 2.3em;
   font-family: "Plaax 6 Trial";
   font-weight: bold;
 }
 
 #description {
-  height: 100%;
+  height: 80%;
   width: 100%;
+  margin-top: 20%;
 }
 
+.services {
+  margin: 1em;
+}
 
