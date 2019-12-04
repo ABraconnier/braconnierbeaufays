@@ -2,7 +2,6 @@
   <head>
     <title>Braconnier Beaufays</title>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
   </head>
 
@@ -12,57 +11,55 @@
         <a href="">services</a> / <a href="">clients</a> / <a href="">about</a> / <a href="">contact</a>
       </nav>
       <div id="title">
-        <h1 id="beaufays braconnier"><span class="b" style="color:black;">b</span><span class="r" style="color:black;">r</span><span class="a" style="color:black;">a</span><span class="c" style="color:black;">c</span><span class="o" style="color:black;">o</span><span class="n" style="color:black;">n</span><span class="n" style="color:black;">n</span><span class="i" style="color:black;">i</span><span class="e" style="color:black;">e</span><span class="r" style="color:black;">r</span><span class="b" style="color:black;">b</span><span class="e" style="color:black;">e</span><span class="a" style="color:black;">a</span><span class="u" style="color:black;">u</span><span class="f" style="color:black;">f</span><span class="a" style="color:black;">a</span><span class="y" style="color:black;">y</span><span class="s" style="color:black;">s</span></h1>
+        <h1 id="bracobeaufa"><span>Braconnier</span><span class="blue-font">Beaufays</span></h1>
       </div>
     </div>
     <div class="first-down"><div class="arrow-down"></div></div>
-    <div class="wrapper">
-      <div class="col-left">
-        <h2>consectetur</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur sed lorem a semper. Fusce accumsan ipsum vitae lorem venenatis, eu sollicitudin libero placerat. Sed ut ex at mi dictum sollicitudin non nec lectus. Sed sit amet turpis blandit dolor finibus accumsan non eget felis. Fusce vel erat in est tincidunt ornare. Nunc lectus tellus, convallis id bibendum eget, porta in nunc. Duis scelerisque tristique dignissim. Maecenas placerat eleifend nunc. Donec euismod accumsan neque eget facilisis. Curabitur interdum sodales neque quis posuere.
-        </p>
-      </div>
-      <div class="col-right">
-        <ul>
-          <li>
-            <a href="">lorem ipsum</a>
-          </li>
-          <li>
-            <a href="">dolorem sit</a>
-          </li>
-          <li>
-            <a href="">consectetur</a>
-          </li>
-          <li>
-            <a href="">adsciping</a>
-          </li>
-          <li>
-            <a href="">posuere turpis</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <div id="description">
+     <h2 class="pink-font">Bastien</h2>
+     <ul>
+       <li>Sed ut perspiciatis unde omnis</li>
+       <li>Iste natus error sit voluptatem accusantium</li>
+       <li>Doloremque laudantium, totam rem aperiam</li>
+       <li>Eaque ipsa quae ab illo</li>
+     </ul>
+     <h2 class="pink-font">Chloé</h2>
+      <ul>
+       <li>Sed ut perspiciatis unde omnis</li>
+       <li>Iste natus error sit voluptatem accusantium</li>
+       <li>Doloremque laudantium, totam rem aperiam</li>
+       <li>Eaque ipsa quae ab illo</li>
+     </ul>
+   </div>
 
-    <div class="parallax-effect"></div>
-    <div style="height:1000px;background-image: linear-gradient(to right top, #faa7e4, #f395e5, #e983e9, #dc72ee, #cb63f4); font-size:36px; text-align: center; font-family: 'Raleway', Arial, sans-serif">
-      Parallax Effect
-    </div>
+
 
     <script>
-      // color changing in the title
-      const colors = ['#00b2e6', '#FFB1B8']
-      const color = colors[Math.floor(Math.random()*2)]
-      const changeColor = () => {
-        const title = document.getElementById("title");
-        const letters = title.innerText.split("");
-        const letter = letters[Math.floor(Math.random()*19)];
-        const selector = document.getElementsByClassName(letter);
-        Array.from(selector).forEach((element) => {
-          element.style.color = element.style.color === 'black' ? color : 'black';
-        });
+      // title arriving on top
+      window.onscroll = () => {
+        const braco = document.querySelector('#bracobeaufa');
+        const title = document.querySelector('#title');
+        if(this.scrollY <= 700) {
+          title.className = 'sticky-title';
+          braco.className = ''
+        } else {
+          title.className = 'fixed-title';
+          braco.className = 'bigger-font'
+        }
       };
-      setInterval( () => { changeColor(); }, 3000);
+      // color changing in the title
+      // const colors = ['#00b2e6', '#FFB1B8']
+      // const color = colors[Math.floor(Math.random()*2)]
+      // const changeColor = () => {
+      //   const title = document.getElementById("title");
+      //   const letters = title.innerText.split("");
+      //   const letter = letters[Math.floor(Math.random()*19)];
+      //   const selector = document.getElementsByClassName(letter);
+      //   Array.from(selector).forEach((element) => {
+      //     element.style.color = element.style.color === 'black' ? color : 'black';
+      //   });
+      // };
+      // setInterval( () => { changeColor(); }, 3000);
     </script>
   </body>
 </html>
