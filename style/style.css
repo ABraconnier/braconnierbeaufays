@@ -1,55 +1,69 @@
 /*First screen*/
 
-#logo {
-  width: 200;
-  display: inline;
-}
-
   /*#00b2e6; blue color from PDF*/
   /*#FFB1B8; pink color from PDF*/
 
 h1 {
   font-family: 'Plaax 1 Sathonay';
-  font-size: 400;
+  font-size: 24vw;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
   line-height: 0.7;
+  margin-top: 15%;
+  margin-bottom: 0;
+  padding: 0;
   text-transform: uppercase;
-  transition-duration: 3s;
+}
 
+#bastien, #chloe {
+  margin-top: 0%;
+  font-family: 'DTL Fleischmann Display';
+  font-size: 3vw;
+  font-weight: normal;
+  font-style: italic;
+  transition-duration: 4s;
+  opacity: 0;
+}
+
+#bastien {
+  margin-left: 23vw;
+}
+
+#chloe {
+  margin-left: 42vw;
+}
+
+#title {
+  position: fixed;
+  transition-duration: 1s;
 }
 
 .first {
-  height: 100%;
+  height: 90%;
   width: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
+
+.blue-font {
+  color: #00b2e6;
+}
+
+.pink-font {
+  color: #FFB1B8;
+}
+
 
 nav {
   font-family: 'Maax Mono';
   text-align: right;
-  font-size: 30;
+  font-size: 20;
 }
 
-nav a {
+a {
   text-decoration: none;
   color: black;
 }
 
 nav a:hover {
   text-decoration: underline;
-}
-
-
-
-.bottom {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
 }
 
 .arrow-down {
@@ -60,8 +74,38 @@ nav a:hover {
   border-top: 50px solid black;
 }
 
+.first-down {
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
 
-span {
-  transition-duration: 3s;
+h2 {
+  font-family: 'Plaax 6 Trial';
+  font-weight: bold;
+  margin: 0;
+  line-height: 0.9;
+  font-size: 90px;
+}
+
+ul {
+  padding: 0;
+  padding-right: 40%;
+  margin: 0;
+  list-style-type: none;
+  font-size: 2.3em;
+  font-family: "Plaax 6 Trial";
+  font-weight: bold;
+}
+
+#description {
+  height: 80%;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.services {
+  margin: 1em;
 }
 
