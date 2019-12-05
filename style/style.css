@@ -9,8 +9,27 @@ h1 {
   font-weight: normal;
   line-height: 0.7;
   margin-top: 15%;
+  margin-bottom: 0;
   padding: 0;
   text-transform: uppercase;
+}
+
+#bastien, #chloe {
+  margin-top: 0%;
+  font-family: 'DTL Fleischmann Display';
+  font-size: 3vw;
+  font-weight: normal;
+  font-style: italic;
+  transition-duration: 4s;
+  opacity: 0;
+}
+
+#bastien {
+  margin-left: 23vw;
+}
+
+#chloe {
+  margin-left: 42vw;
 }
 
 #title {
