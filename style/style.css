@@ -5,27 +5,17 @@
 
 h1 {
   font-family: 'Plaax 1 Sathonay';
-  font-size: 250px;
+  font-size: 24vw;
   font-weight: normal;
   line-height: 0.7;
   margin-top: 15%;
   padding: 0;
   text-transform: uppercase;
-  transition-duration: 2s;
 }
 
-.sticky-title {
-  position: sticky;
-  top: 0;
-}
-
-.fixed-title {
+#title {
   position: fixed;
-  top: -40%;
-}
-
-.bigger-font {
-  font-size: 350px;
+  transition-duration: 1s;
 }
 
 .first {
@@ -74,10 +64,10 @@ nav a:hover {
 
 h2 {
   font-family: 'Plaax 6 Trial';
-  font-size: 90;
   font-weight: bold;
   margin: 0;
   line-height: 0.9;
+  font-size: 90px;
 }
 
 ul {

@@ -11,7 +11,7 @@
         <a href="">services</a> / <a href="">clients</a> / <a href="">about</a> / <a href="">contact</a>
       </nav>
       <div id="title">
-        <h1 id="bracobeaufa"><span>Braconnier</span><span class="blue-font">Beaufays</span></h1>
+        <h1><span>Braconnier</span><span class="blue-font">Beaufays</span></h1>
       </div>
     </div>
     <div class="first-down"><div class="arrow-down"></div></div>
@@ -39,18 +39,33 @@
 
 
     <script>
-      // title arriving on top and getting bigger
+      // title is fixed and is only one fifth visible on the other pages
       window.onscroll = () => {
-        const braco = document.querySelector('#bracobeaufa');
         const title = document.querySelector('#title');
-        if(this.scrollY <= 700) {
-          title.className = 'sticky-title';
-          braco.className = ''
+        if(this.scrollY <= window.innerHeight + window.innerHeight / 100 ) {
+          title.style.top = '0';
         } else {
-          title.className = 'fixed-title';
-          braco.className = 'bigger-font'
+          title.style.top = '-28vw';
         }
       };
+
+    // title getting bigger while scrolling
+    // const title               = document.querySelector('#bracobeaufa')
+    // const titleFontSizePX     = getComputedStyle(title).fontSize
+    // const titleFontSizePXInt  = parseInt(titleFontSizePX, 10)
+
+    // let lastScroll          = 0
+
+    // const updateFontSize = (event) => {
+    //   if (lastScroll != window.scrollY) {
+    //     let titleSize      = titleFontSizePXInt + 0.5 * window.scrollY
+    //     if (titleSize > 350) { titleSize  = 350 };
+    //     title.style.fontSize  = titleSize + 'px'
+    //   }
+    //   lastScroll = window.scrollY
+    // }
+
+    // document.addEventListener('scroll', updateFontSize);
       // color changing in the title
       // const colors = ['#00b2e6', '#FFB1B8']
       // const color = colors[Math.floor(Math.random()*2)]
