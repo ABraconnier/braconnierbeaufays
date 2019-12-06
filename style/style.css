@@ -35,6 +35,7 @@ h1 {
 #title {
   position: fixed;
   transition-duration: 1s;
+  background-color: white;
 }
 
 .first {
@@ -81,31 +82,19 @@ nav a:hover {
   justify-content: flex-end;
 }
 
-h2 {
-  font-family: 'Plaax 6 Trial';
-  font-weight: bold;
-  margin: 0;
-  line-height: 0.9;
-  font-size: 90px;
-}
-
-ul {
-  padding: 0;
-  padding-right: 40%;
-  margin: 0;
-  list-style-type: none;
-  font-size: 2.3em;
+p {
+  font-size: 2.25vw;
   font-family: "Plaax 6 Trial";
-  font-weight: bold;
 }
 
 #description {
   height: 80%;
-  width: 100%;
-  margin-top: 20%;
+  padding-top: 15vw;
+  padding-right: 50vw;
+  background-color: rgb(246, 246, 246);
 }
 
-.services {
-  margin: 1em;
+.underline {
+  text-decoration: underline;
 }
 
