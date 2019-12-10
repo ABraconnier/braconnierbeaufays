@@ -17,34 +17,44 @@
     </div>
     <div class="first-down"><div class="arrow-down"></div></div>
   <div id="description">
-    <div class="services">
-       <h2 class="maax-font">Bastien</h2>
-       <ul>
-         <li>Sed ut perspiciatis unde omnis</li>
-         <li>Iste natus error sit voluptatem accusantium</li>
-         <li>Doloremque laudantium, totam rem aperiam</li>
-         <li>Eaque ipsa quae ab illo</li>
-       </ul>
-     </div>
-     <div class="services">
-     <h2>Chloé</h2>
-      <ul>
-       <li>Sed ut perspiciatis unde omnis</li>
-       <li>Iste natus error sit voluptatem accusantium</li>
-       <li>Doloremque laudantium, totam rem aperiam</li>
-       <li>Eaque ipsa quae ab illo</li>
-     </ul>
-     </div>
-   </div>
+    <p>Otatis modis etum incto qui culla coriorunt, eariorem qui bea cone vel id que omniatatiam ut atem et eossend aepudipsum is <span class="underline">maximin nis doluptatis</span> nis dolupta volento tatiis dit resequo cum aperrume et liquas sum, tem ratet, veles et re parumquia et poris dolecepro to oditis sitatias volorporios dolo magnis veles ipiendebit perrorem fugiate ctorem am, sapientibus sit in nemoluptates ea in rentota tiaerci endebis evenditate lab illuptas sitatur serae voloreseque consequam fuga.</p>
+  </div>
+  <div id="services">
+    <ul>
+      <h2>Services</h2>
+      <li>
+        lorem
+      </li>
+      <li>
+        ipsum
+      </li>
+      <li>
+        modis
+      </li>
+      <li>
+        consequam
+      </li>
+      <li>
+        eariorem
+      </li>
+      <li>
+        ratet
+      </li>
+    </ul>
+    <div id="colored-block">
+      <img src="" alt="">
+    </div>
+  </div>
 
 
 
     <script>
       // title is fixed and is only one fifth visible on the other pages
       window.onscroll = () => {
+        console.log(this.scrollY);
         const title = document.querySelector('#title');
-        if(this.scrollY <= window.innerHeight + window.innerHeight / 100 ) {
-          title.style.top = '0';
+        if(this.scrollY <= window.innerHeight / 2) {
+          title.style.top = '2vw';
           document.getElementById('bastien').style.transitionDuration = '4s';
           document.getElementById('chloe').style.transitionDuration = '4s';
           document.getElementById('bastien').style.opacity = '1';
