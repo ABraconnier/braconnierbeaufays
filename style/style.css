@@ -88,7 +88,7 @@ p {
   font-family: "Plaax 6 Trial";
   width: 50%;
   height: 75%;
-  padding: 23vh 0 20vh 2vh;
+  padding: 23vh 0 20vh 3vw;
 }
 
 #description {
@@ -103,7 +103,7 @@ p {
 #services {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 83vh;
+  height: 100vh;
 }
 
 h2 {
@@ -117,7 +117,7 @@ ul {
   font-size: 20;
   list-style: none;
   margin: 0;
-  padding-left: 1vw;
+  padding: 23vh 0 20vh 3vw;
 }
 
 li {
@@ -126,5 +126,16 @@ li {
 
 #colored-block {
   background-color: rgb(157, 212, 210);
+  padding: 5vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%
+  height: 100%;
+}
+
+#hands {
+  width: 20vw;
+  height: 20vw;
 }
 
