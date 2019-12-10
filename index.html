@@ -2,13 +2,16 @@
   <head>
     <title>Braconnier Beaufays</title>
     <meta charset="utf-8">
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="style/glide.core.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="style/style.css">
   </head>
 
   <body>
     <div class="first">
       <nav>
-        <a href="">services</a> / <a href="">clients</a> / <a href="">about</a> / <a href="">contact</a>
+        <a href="#description">description</a> / <a href="">clients</a> / <a href="">about</a> / <a href="">contact</a>
       </nav>
       <div id="title">
         <h1><span>Braconnier</span><span class="blue-font">Beaufays</span></h1>
@@ -45,13 +48,62 @@
       <img src="style/images/hands_white.png" id="hands" alt="">
     </div>
   </div>
+  <div id="bb">
+  </div>
+  <div id="clients">
+    <h2>Clients</h2>
+    <div class="container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="https://source.unsplash.com/random/350x350" alt=""></li>
+            <li class="glide__slide"><img src="https://source.unsplash.com/random/350x350" alt=""></li>
+            <li class="glide__slide"><img src="https://source.unsplash.com/random/350x350" alt=""></li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="arrow left"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="arrow right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contacts">
+    <div id="infos">
+    <h2>Contacts</h2>
+      <p>
+      Bastien Braconnier <br>
+      +32 (0) 495 34 12 90 <br>
+      bastien@braconnierbeaufays.com <br>
+      braconnierbeaufays.com <br>
+      </p>
+      <p>
+      Chloé Beaufays<br>
+      +32 (0) 497 66 53 39<br>
+      chloe@braconnierbeaufays.com<br>
+      braconnierbeaufays.com<br>
+      </p>
+    </div>
+    <div id="logo">
+      <h1>BB</h1>
+    </div>
+  </div>
 
 
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+      const config = {
+        type: 'carousel',
+        perView: 3,
+        focusAt: 'center'
+      }
+      new Glide('.glide', config).mount()
+    </script>
 
     <script>
       // title is fixed and is only one fifth visible on the other pages
       window.onscroll = () => {
-        console.log(this.scrollY);
         const title = document.querySelector('#title');
         if(this.scrollY <= window.innerHeight / 2) {
           title.style.top = '2vw';
@@ -72,6 +124,9 @@
       document.getElementById('bastien').style.opacity = '1';
       document.getElementById('chloe').style.opacity = '1';
       };
+
+
+
 
     // title getting bigger while scrolling
     // const title               = document.querySelector('#bracobeaufa')

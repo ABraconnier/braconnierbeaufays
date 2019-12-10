@@ -37,6 +37,7 @@ h1 {
   top: 2vw;
   transition-duration: 1s;
   background-color: white;
+  z-index: 10;
 }
 
 .first {
@@ -83,7 +84,7 @@ nav a:hover {
   justify-content: flex-end;
 }
 
-p {
+#description p {
   font-size: 2.2vw;
   font-family: "Plaax 6 Trial";
   width: 50%;
@@ -92,7 +93,6 @@ p {
 }
 
 #description {
-  height: 100vh;
   background-color: rgb(246, 246, 246);
 }
 
@@ -103,7 +103,6 @@ p {
 #services {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
 }
 
 h2 {
@@ -112,16 +111,18 @@ h2 {
   text-transform: uppercase;
 }
 
-ul {
+#services ul {
   font-family: 'Maax Mono';
   font-size: 20;
   list-style: none;
   margin: 0;
-  padding: 23vh 0 20vh 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 li {
-  margin: 2vw 0;
+  margin: 0.5vw 0;
 }
 
 #colored-block {
@@ -130,8 +131,6 @@ li {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 100%
-  height: 100%;
 }
 
 #hands {
@@ -139,3 +138,70 @@ li {
   height: 20vw;
 }
 
+#bb, #clients, #services, #description {
+  height: 100vh;
+}
+
+#bb {
+  background-color: rgb(246, 246, 246);
+}
+
+#clients h2 {
+  padding: 5vw;
+  margin: 0;
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  margin: 1vw auto;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.glide__arrow--left {
+  left: -5em;
+}
+
+.glide__arrow--right {
+  right: -2em;
+}
+
+#contacts {
+  padding: 5vw;
+  margin: 0;
+  color: white;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #00b2e6;
+}
+
+#contacts p {
+  font-family: 'Maax Mono';
+  font-size: 20;
+}
+
+#contacts h1 {
+  margin: 0;
+  font-size: 17vw;
+}
+
+#logo {
+  align-self: flex-end
+}
