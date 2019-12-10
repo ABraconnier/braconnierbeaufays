@@ -34,7 +34,7 @@ h1 {
 
 #title {
   position: fixed;
-  top: 2vw;
+  top: 3vw;
   transition-duration: 1s;
   background-color: white;
   z-index: 10;
@@ -146,9 +146,14 @@ li {
   background-color: rgb(246, 246, 246);
 }
 
+#clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #clients h2 {
   padding: 5vw;
-  margin: 0;
 }
 
 .container {
