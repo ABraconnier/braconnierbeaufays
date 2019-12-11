@@ -187,39 +187,20 @@
       document.getElementById('chloe').style.opacity = '1';
       };
 
-
-
-
-    // title getting bigger while scrolling
-    // const title               = document.querySelector('#bracobeaufa')
-    // const titleFontSizePX     = getComputedStyle(title).fontSize
-    // const titleFontSizePXInt  = parseInt(titleFontSizePX, 10)
-
-    // let lastScroll          = 0
-
-    // const updateFontSize = (event) => {
-    //   if (lastScroll != window.scrollY) {
-    //     let titleSize      = titleFontSizePXInt + 0.5 * window.scrollY
-    //     if (titleSize > 350) { titleSize  = 350 };
-    //     title.style.fontSize  = titleSize + 'px'
-    //   }
-    //   lastScroll = window.scrollY
-    // }
-
-    // document.addEventListener('scroll', updateFontSize);
-      // color changing in the title
-      // const colors = ['#00b2e6', '#FFB1B8']
-      // const color = colors[Math.floor(Math.random()*2)]
-      // const changeColor = () => {
-      //   const title = document.getElementById("title");
-      //   const letters = title.innerText.split("");
-      //   const letter = letters[Math.floor(Math.random()*19)];
-      //   const selector = document.getElementsByClassName(letter);
-      //   Array.from(selector).forEach((element) => {
-      //     element.style.color = element.style.color === 'black' ? color : 'black';
-      //   });
-      // };
-      // setInterval( () => { changeColor(); }, 3000);
+      // bb appearing
+      const lettersAppear = () => {
+        if (scrollY >= 2.5 * window.innerHeight) {
+        const letters = document.getElementsByClassName("bblogo");
+        const letter = letters[Math.floor(Math.random()*letters.length)];
+        letter.style.opacity = '1';
+      };
+        // if (letter.style.opacity === '0') {
+        //   console.log(letter);
+        //   letter.style.opacity = '1';
+        // };
+      };
+      setInterval( () => { lettersAppear() }, 100);
+      // document.addEventListener('scroll', lettersAppear);
     </script>
   </body>
 </html>

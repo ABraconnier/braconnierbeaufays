@@ -260,12 +260,14 @@ h4 {
 }
 
 .bblogo {
-  width: 5.5vw;
+  width: 75;
+  opacity: 0;
+  transition-duration: 2s;
 }
 
 .bbgroup {
   margin: auto;
-  padding: 15vw;
+  padding-top: 15vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -303,5 +305,8 @@ nav {
 }
 h2 {
   font-size: 50px;
+}
+#bb {
+padding-right: 170px;
 }
 }
