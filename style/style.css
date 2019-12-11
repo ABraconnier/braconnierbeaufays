@@ -210,3 +210,46 @@ i {
 #logo {
   align-self: flex-end
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 25vw auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 25%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.content {
+  font-family: 'Maax Mono';
+  font-size: 20;
+}
+
+h4 {
+  font-family: 'DTL Fleischmann Display';
+  font-size: 3vw;
+  font-weight: normal;
+  font-style: italic;
+  margin: 2vw 0;
+}
+
+.close {
+  font-size: 3vw;
+}
