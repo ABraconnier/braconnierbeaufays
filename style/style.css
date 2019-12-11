@@ -154,6 +154,7 @@ li {
 
 #clients h2 {
   padding: 5vw;
+  margin-bottom: 0;
 }
 
 .container {
@@ -252,4 +253,32 @@ h4 {
 
 .close {
   font-size: 3vw;
+}
+
+.logo-clients {
+  filter: grayscale(80%);
+}
+
+@media (max-height: 600px) {
+#description {
+   height: 800px;
+  }
+#clients {
+  height: 800px;
+}
+}
+
+@media (max-width: 600px) {
+#description p{
+   font-size: 20px;
+  }
+#description {
+  height: 800px;
+}
+nav {
+  display: none;
+}
+h2 {
+  font-size: 50px;
+}
 }
