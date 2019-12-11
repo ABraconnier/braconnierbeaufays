@@ -259,6 +259,31 @@ h4 {
   filter: grayscale(80%);
 }
 
+.bblogo {
+  width: 75;
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+.bbgroup {
+  margin: auto;
+  padding-top: 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  width: 28%;
+  grid-row-gap: 1vw;
+}
+
+.subgroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 1vw;
+  grid-row-gap: 0.5vw;
+}
+
 @media (max-height: 600px) {
 #description {
    height: 800px;
@@ -280,5 +305,8 @@ nav {
 }
 h2 {
   font-size: 50px;
+}
+#bb {
+padding-right: 170px;
 }
 }
