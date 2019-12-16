@@ -2,6 +2,7 @@
   <head>
     <title>Braconnier Beaufays</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <!-- Required Core Stylesheet -->
     <link rel="stylesheet" href="style/glide.core.css">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
@@ -14,11 +15,17 @@
         <a href="#description">description</a> / <a href="#services">services</a> / <a href="#clients">clients</a> / <a href="#contacts">contact</a>
       </nav>
       <div id="title">
-        <h1><span>Braconnier</span><span class="blue-font">Beaufays</span></h1>
-        <h3><span id="bastien">Bastien</span><span id="chloe" class="blue-font">Chloé</span></h3>
+        <div class="names">
+          <h1>Braconnier</h1>
+          <h3 id="bastien">Bastien</h3>
+        </div>
+        <div class="names">
+          <h1 class="blue-font">Beaufays</h1>
+          <h3 id="chloe" class="blue-font">Chloé</h3>
+        </div>
       </div>
+      <div class="first-down"><div class="arrow-down"></div></div>
     </div>
-    <div class="first-down"><div class="arrow-down"></div></div>
   <div id="description">
     <p>Otatis modis etum incto qui culla coriorunt, eariorem qui bea cone vel id que omniatatiam ut atem et eossend aepudipsum is <span class="underline">maximin nis doluptatis</span> nis dolupta volento tatiis dit resequo cum aperrume et liquas sum, tem ratet, veles et re parumquia et poris dolecepro to oditis sitatias volorporios dolo magnis veles ipiendebit perrorem fugiate ctorem am, sapientibus sit in nemoluptates ea in rentota tiaerci endebis evenditate lab illuptas sitatur serae voloreseque consequam fuga.</p>
   </div>
@@ -168,13 +175,13 @@
       window.onscroll = () => {
         const title = document.querySelector('#title');
         if(this.scrollY <= window.innerHeight / 2) {
-          title.style.top = '3vw';
+          title.style.top = '30vh';
           document.getElementById('bastien').style.transitionDuration = '4s';
           document.getElementById('chloe').style.transitionDuration = '4s';
           document.getElementById('bastien').style.opacity = '1';
           document.getElementById('chloe').style.opacity = '1';
         } else {
-          title.style.top = '-28vw';
+          title.style.top = '-13vw';
           document.getElementById('bastien').style.transitionDuration = '1s';
           document.getElementById('bastien').style.opacity = '0';
           document.getElementById('chloe').style.transitionDuration = '1s';

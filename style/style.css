@@ -2,20 +2,23 @@
 
   /*#00b2e6; blue color from PDF*/
   /*#FFB1B8; pink color from PDF*/
+body {
+  margin: 0;
+}
 
 h1 {
   font-family: 'Plaax 1 Sathonay';
   font-size: 24vw;
   font-weight: normal;
   line-height: 0.7;
-  margin-top: 15%;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
 
 #bastien, #chloe {
-  margin-top: 0%;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: 'DTL Fleischmann Display';
   font-size: 3vw;
   font-weight: normal;
@@ -24,25 +27,28 @@ h1 {
   opacity: 0;
 }
 
-#bastien {
-  margin-left: 23vw;
-}
-
-#chloe {
-  margin-left: 42vw;
-}
-
 #title {
+  display: flex;
   position: fixed;
-  top: 3vw;
+  top: 30vh;
+  width: 100%;
   transition-duration: 1s;
   background-color: white;
   z-index: 10;
 }
 
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .first {
-  height: 90%;
+  height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .blue-font {
@@ -295,18 +301,19 @@ h4 {
 
 @media (max-width: 600px) {
 #description p{
-   font-size: 20px;
+   font-size: 15px;
   }
 #description {
-  height: 800px;
-}
-nav {
-  display: none;
+  height: fit-content;
 }
 h2 {
   font-size: 50px;
 }
 #bb {
 padding-right: 170px;
+}
+
+nav {
+  display: none;
 }
 }
