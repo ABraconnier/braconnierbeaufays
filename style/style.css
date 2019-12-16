@@ -187,11 +187,11 @@ i {
 }
 
 .glide__arrow--left {
-  left: -5em;
+  left: 0em;
 }
 
 .glide__arrow--right {
-  right: -2em;
+  right: 0em;
 }
 
 .glide__slide {
