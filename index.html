@@ -192,11 +192,13 @@
       window.onload = () => {
       document.getElementById('bastien').style.opacity = '1';
       document.getElementById('chloe').style.opacity = '1';
+      console.log(window.innerHeight);
+      console.log(scrollY);
       };
 
       // bb appearing
       const lettersAppear = () => {
-        if (scrollY >= 2.5 * window.innerHeight) {
+        if (scrollY >= 2.1 * window.innerHeight) {
         const letters = document.getElementsByClassName("bblogo");
         const letter = letters[Math.floor(Math.random()*letters.length)];
         letter.style.opacity = '1';

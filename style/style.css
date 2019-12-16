@@ -160,7 +160,7 @@ li {
 }
 
 #clients h2 {
-  padding: 5vw;
+  padding: 3vw;
   margin-bottom: 0;
 }
 
@@ -322,11 +322,16 @@ h4 {
 }
 
 #services ul {
-  padding: 10vw 0 10vw 3vw;
+  padding: 30vw 0 30vw 3vw;
+}
+
+#bastien, #chloe {
+  font-size: 6vw;
 }
 
 #contacts {
   flex-direction: row;
+  height: fit-content;
 }
 
 #contacts p {
