@@ -6,6 +6,12 @@ body {
   margin: 0;
 }
 
+#bb, #clients, #services, #description {
+  height: 100vh;
+}
+
+/*title*/
+
 h1 {
   font-family: 'Plaax 1 Sathonay';
   font-size: 24vw;
@@ -55,15 +61,10 @@ h1 {
   color: #00b2e6;
 }
 
-.pink-font {
-  color: #FFB1B8;
-}
-
-
 nav {
   font-family: 'Maax Mono';
   text-align: right;
-  font-size: 20;
+  font-size: 20px;
 }
 
 a {
@@ -90,11 +91,12 @@ nav a:hover {
   justify-content: flex-end;
 }
 
+/*description*/
+
 #description p {
   font-size: 2.2vw;
   font-family: "Plaax 6 Trial";
   width: 50%;
-  height: 75%;
   padding: 23vh 0 20vh 3vw;
 }
 
@@ -102,24 +104,27 @@ nav a:hover {
   background-color: rgb(246, 246, 246);
 }
 
-.underline {
-  text-decoration: underline;
-}
+/*services*/
 
 #services {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+#services h2 {
+  margin-top: 0;
+}
+
 h2 {
   font-family: 'Plaax 1 Sathonay';
-  font-size: 5vw;
+  font-size: 7vw;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 #services ul {
   font-family: 'Maax Mono';
-  font-size: 20;
+  font-size: 20px;
   list-style: none;
   margin: 0;
   display: flex;
@@ -144,14 +149,47 @@ li {
   height: 20vw;
 }
 
-#bb, #clients, #services, #description {
-  height: 100vh;
-}
+/*bb*/
 
 #bb {
   background-color: rgb(246, 246, 246);
   display: flex;
 }
+
+.bblogo {
+  width: 70px;
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+.bbgroup {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+  grid-row-gap: 1vw;
+  grid-column-gap: 0.5vw;
+}
+
+.subgroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 1vw;
+  grid-row-gap: 0.5vw;
+}
+
+.left-block {
+  justify-self: end;
+}
+
+.right-block {
+  justify-self: start;
+}
+
+/*clients*/
 
 #clients {
   display: flex;
@@ -162,6 +200,7 @@ li {
 #clients h2 {
   padding: 3vw;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .container {
@@ -196,30 +235,6 @@ i {
 
 .glide__slide {
   text-align: center;
-}
-
-#contacts {
-  padding: 5vw;
-  margin: 0;
-  color: white;
-  height: 80vh;
-  display: flex;
-  justify-content: space-between;
-  background-color: #00b2e6;
-}
-
-#contacts p {
-  font-family: 'Maax Mono';
-  font-size: 20;
-}
-
-#contacts h1 {
-  margin: 0;
-  font-size: 17vw;
-}
-
-#logo {
-  align-self: flex-end
 }
 
 .overlay {
@@ -266,41 +281,37 @@ h4 {
 }
 
 .logo-clients {
-  filter: grayscale(80%);
+  height: 300px;
+  width: 300px;
 }
 
-.bblogo {
-  width: 75;
-  opacity: 0;
-  transition-duration: 2s;
+/*contacts*/
+
+#contacts {
+  padding: 5vw;
+  margin: 0;
+  color: white;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #00b2e6;
 }
 
-.bbgroup {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  width: 100%;
-  grid-row-gap: 1vw;
-  grid-column-gap: 0.5vw;
+#contacts p {
+  font-family: 'Maax Mono';
+  font-size: 20px;
 }
 
-.subgroup {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 1vw;
-  grid-row-gap: 0.5vw;
+#contacts h1 {
+  margin: 0;
+  font-size: 17vw;
 }
 
-.left-block {
-  justify-self: end;
+#logo {
+  align-self: flex-end;
 }
 
-.right-block {
-  justify-self: start;
-}
+/*queries*/
 
 @media (max-height: 600px) {
 #description {
@@ -323,6 +334,7 @@ h4 {
 
 #services ul {
   padding: 30vw 0 30vw 3vw;
+  font-size: 3vw;
 }
 
 #bastien, #chloe {
