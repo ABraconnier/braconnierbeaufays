@@ -76,13 +76,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.arrow-down {
+/*.arrow-down {
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 50px solid black;
-}
+}*/
 
 .first-down {
   height: 10%;
@@ -97,13 +97,20 @@ nav a:hover {
   font-size: 2.2vw;
   font-family: "Plaax 6 Trial";
   width: 50%;
-  padding: 23vh 0 20vh 3vw;
+  padding: 23vh 0 0vh 3vw;
+  /*padding: 23vh 0 20vh 3vw;*/
 }
 
 #description {
   background-color: rgb(246, 246, 246);
 }
 
+
+.linkedin {
+  width: 4vw;
+  margin: 0px auto;
+  display: block;
+}
 /*services*/
 
 #services {
@@ -159,7 +166,7 @@ li {
 .bblogo {
   width: 70px;
   opacity: 0;
-  transition-duration: 2s;
+  /*transition-duration: 2s;*/
 }
 
 .bbgroup {
@@ -208,7 +215,7 @@ li {
   margin: 1vw auto;
 }
 
-i {
+.glide__arrows i {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -288,10 +295,13 @@ h4 {
 /*contacts*/
 
 #contacts {
-  padding: 5vw;
+  height: 80vh;
+}
+
+#contacts-body {
+  padding: 1vw 2vw;
   margin: 0;
   color: white;
-  height: 80vh;
   display: flex;
   justify-content: space-between;
   background-color: #00b2e6;
@@ -302,6 +312,16 @@ h4 {
   font-size: 20px;
 }
 
+footer {
+  text-align: center;
+  background-color: rgb(246, 246, 246);
+}
+
+#footer p {
+  font-size: 0.8vw;
+  margin: 0;
+}
+
 #contacts h1 {
   margin: 0;
   font-size: 17vw;
@@ -310,6 +330,25 @@ h4 {
 #logo {
   align-self: flex-end;
 }
+
+.lkd-white  {
+  filter: brightness(0) invert(1);
+  margin: 4vw 0 ;
+}
+
+.black-actaeon {
+  padding-top: 3px;
+  padding-bottom: 6px;
+}
+
+.realized {
+  padding-top: 6px;
+}
+
+.dark-grey {
+  color: #797979;
+}
+
 
 /*queries*/
 
@@ -365,5 +404,9 @@ nav {
 
 .arrow-down {
   display: none;
+}
+
+.linkedin {
+  width: 8vw;
 }
 }
