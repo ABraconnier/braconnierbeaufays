@@ -164,7 +164,7 @@ li {
 }
 
 .bblogo {
-  width: 70px;
+  width: 60px;
   opacity: 0;
   /*transition-duration: 2s;*/
 }
@@ -365,11 +365,11 @@ footer {
 #description p{
   font-size: 15px;
   width: 65%;
-  padding: 10vh 0 10vh 3vw;;
+  padding: 28vh 0 10vh 3vw;;
   }
-#description, #services, #clients {
+/*#description, #services, #clients {
   height: fit-content;
-}
+}*/
 
 #services ul {
   padding: 30vw 0 30vw 3vw;
@@ -382,19 +382,33 @@ footer {
 
 #contacts {
   flex-direction: row;
-  height: fit-content;
+  height: 90vh
+}
+
+#contacts-body {
+  display: flex;
+  align-items: center;
+  height: 80vh;
 }
 
 #contacts p {
   font-size: 15px;
 }
 
-#logo {
-  align-self: flex-start;
+#contacts h1 {
+  font-size: 30vw
+}
+
+#footer p {
+  font-size: 10px;
+}
+
+#footer {
+  height: fit-content;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 70px;
   margin: 0;
 }
 
@@ -408,5 +422,17 @@ nav {
 
 .linkedin {
   width: 8vw;
+}
+
+.first {
+  justify-content: flex-end;
+}
+
+.bblogo {
+  width: 60px;
+}
+
+#arrow {
+  height: 100px;
 }
 }

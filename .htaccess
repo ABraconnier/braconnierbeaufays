@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+
+RewriteRule (.*) https://braconnierbeaufays.com [R=301,L]
